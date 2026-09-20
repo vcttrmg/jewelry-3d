@@ -1,6 +1,12 @@
 # Aurelia Jewelry 3D
 
-A polished, responsive front-end concept for a jewelry visualization studio. The interface is designed around a jewelry-specific workflow: text-to-image concepts, image-to-3D references, 4D motion previews, and a dedicated asset vault for high-resolution images, 3D models, and videos.
+A polished front-end concept for a high-jewelry visualization studio dedicated to **natural 24K / 999.9 gold and natural, earth-mined diamonds only**.
+
+## Material policy
+
+The creative brief controls support natural 24K gold forms and finishes including high polish, satin, brushed, hammered, matte, granulated, wirework, textured, and leaf-like surfaces. Diamond varieties include colorless, champagne, cognac, fancy yellow, fancy pink, fancy blue, fancy green, and black natural diamonds, with multiple cuts.
+
+Lab-grown, synthetic, simulated, plated, and alloyed 14K/18K/22K, white-gold, and rose-gold references are blocked in the brief validation. The interface is a design specification tool; finished jewelry must still be verified through supplier documentation and independent certification.
 
 ## Run locally
 
@@ -12,10 +18,10 @@ npx serve .
 
 ## Included MVP interactions
 
-- Responsive luxury jewelry dashboard
-- Creative tool modal for text/image/video references
-- Local file selection for jewelry source assets
-- Asset vault download controls and export manifest
-- Collection cards for image, 3D, and motion deliverables
+- High-jewelry dashboard and editorial asset vault
+- Text-to-image, image-to-3D, and 4D motion briefs
+- Material controls for 24K gold forms, finishes, diamond varieties, and cuts
+- Natural-material policy in generated download manifests
+- Local jewelry image/video file selection
 
-The generation controls are intentionally API-ready placeholders. Connect the form submit handler in `app.js` to your preferred image, 3D, storage, and video-generation APIs for production use.
+The generation controls are front-end placeholders. Connect the form submit handler to production image, 3D, storage, and video-generation APIs, and require provenance/certification metadata before publishing a finished asset.
