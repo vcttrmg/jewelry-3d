@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aurelia — premium jewelry visualization and asset studio." />
+  <title>Aurelia | Jewelry Visualization Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#"><span class="brand-mark">A</span><span>AURELIA</span></a>
+      <p class="eyebrow side-label">Creative studio</p>
+      <nav>
+        <a class="nav-item active" href="#studio"><span>✦</span> Studio</a>
+        <a class="nav-item" href="#collection"><span>◇</span> My collection <b>12</b></a>
+        <a class="nav-item" href="#downloads"><span>⇩</span> Downloads</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="storage"><div class="storage-row"><span>Storage</span><span>2.4 / 10 GB</span></div><div class="meter"><i></i></div></div>
+        <a class="nav-item muted" href="#settings"><span>⚙</span> Settings</a>
+        <div class="user"><div class="avatar">VC</div><div><strong>Victor</strong><small>Pro workspace</small></div><span>•••</span></div>
+      </div>
+    </aside>
+
+    <main class="main" id="studio">
+      <header class="topbar"><div><p class="eyebrow">Sunday, September 20, 2026</p><h1>Good morning, Victor</h1></div><div class="top-actions"><button class="icon-btn" aria-label="Notifications">♧<i></i></button><button class="primary small" id="newProject">＋ New project</button></div></header>
+
+      <section class="hero-grid">
+        <div class="intro-card"><div><p class="eyebrow gold">THE JEWELRY LAB</p><h2>Make every facet<br><em>feel real.</em></h2><p class="intro-copy">Turn your imagination into high-fidelity jewelry imagery, 3D assets, and motion-ready product stories.</p><button class="primary" id="startCreating">Start creating <span>→</span></button></div><div class="orbital"><span>✦</span><div class="ring r1"></div><div class="ring r2"></div></div></div>
+        <div class="stats-card"><div class="card-heading"><span>Workspace overview</span><span class="live-dot">● Live</span></div><div class="stats"><div><strong>24</strong><small>Creations</small></div><div><strong>08</strong><small>3D assets</small></div><div><strong>12</strong><small>Downloads</small></div></div><div class="sparkline"><span style="height:30%"></span><span style="height:44%"></span><span style="height:35%"></span><span style="height:62%"></span><span style="height:52%"></span><span style="height:78%"></span><span style="height:66%"></span><span style="height:94%"></span></div></div>
+      </section>
+
+      <section class="section-head"><div><p class="eyebrow">CREATIVE TOOLS</p><h2>Bring your vision to life</h2></div><a href="#tools">View all <span>→</span></a></section>
+      <section class="tool-grid" id="tools">
+        <button class="tool-card text-tool" data-tool="text"><div class="tool-icon">✧</div><div><h3>Text to image</h3><p>Photorealistic concepts from a single sentence.</p></div><span class="arrow">↗</span></button>
+        <button class="tool-card image-tool" data-tool="image"><div class="tool-icon">▧</div><div><h3>Image to 3D</h3><p>Transform a reference into a detailed 3D model.</p></div><span class="arrow">↗</span></button>
+        <button class="tool-card motion-tool" data-tool="motion"><div class="tool-icon">◌</div><div><h3>4D motion</h3><p>Add light, movement, and life to every piece.</p></div><span class="arrow">↗</span></button>
+      </section>
+
+      <section class="section-head collection-head" id="collection"><div><p class="eyebrow">RECENT WORK</p><h2>Your collection</h2></div><a href="#downloads">Open collection <span>→</span></a></section>
+      <section class="collection-grid"><article class="piece piece-large"><div class="piece-image necklace"><span>✦</span></div><div class="piece-info"><div><h3>Celestial pendant</h3><p>Image · 2 min ago</p></div><button class="more">•••</button></div></article><article class="piece"><div class="piece-image ring"><span>✦</span></div><div class="piece-info"><div><h3>Solitaire ring</h3><p>3D model · Yesterday</p></div><button class="more">•••</button></div></article><article class="piece"><div class="piece-image earrings"><span>✦</span></div><div class="piece-info"><div><h3>Arc earrings</h3><p>4D motion · Sep 18</p></div><button class="more">•••</button></div></article></section>
+
+      <section class="downloads" id="downloads"><div><p class="eyebrow gold">ASSET VAULT</p><h2>Download-ready, jewelry-specific files.</h2><p>Keep every deliverable in one refined space. Export production assets, campaign visuals, and motion clips in the format your team needs.</p></div><div class="download-list"><div class="download-item"><span class="file-icon image-file">▧</span><div><strong>celestial-pendant_hero.png</strong><small>4K · 8.4 MB</small></div><button class="download-btn" data-download="celestial-pendant_hero.png">⇩</button></div><div class="download-item"><span class="file-icon model-file">◇</span><div><strong>solitaire-ring_model.glb</strong><small>3D model · 24.1 MB</small></div><button class="download-btn" data-download="solitaire-ring_model.glb">⇩</button></div><div class="download-item"><span class="file-icon video-file">▶</span><div><strong>arc-earrings_loop.mp4</strong><small>4D motion · 18.6 MB</small></div><button class="download-btn" data-download="arc-earrings_loop.mp4">⇩</button></div><button class="outline full" id="downloadAll">⇩ Download all assets</button></div></section>
+      <footer><span>© 2026 Aurelia Studio</span><span>Made for the details that matter.</span></footer>
+    </main>
+  </div>
+
+  <div class="modal" id="creationModal" aria-hidden="true"><div class="modal-panel"><button class="close" id="closeModal">×</button><p class="eyebrow gold">NEW CREATION</p><h2 id="modalTitle">Text to image</h2><p id="modalDescription">Describe the jewelry piece you want to visualize.</p><form id="creationForm"><label id="promptLabel">Your creative direction<textarea id="prompt" placeholder="A sculptural gold ring with a champagne diamond, floating on black velvet..."></textarea></label><label class="upload-label">Reference files <span>Optional</span><input type="file" id="fileInput" accept="image/*,video/*" multiple><span class="dropzone">＋ Drop jewelry images or videos here</span></label><button class="primary full" type="submit">Generate preview <span>✦</span></button></form><div class="success" id="success">✦ Your concept is ready. Download options will appear in your collection.</div></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
